@@ -7,9 +7,11 @@ import { BiMenu } from 'react-icons/bi';
 import { CgClose } from 'react-icons/cg';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import Svg from './Svg'
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin();
 const App = () => {
+  var first=useRef(null);
   const href=useRef(null);
   const crsr=useRef(null);
   const page2Ref = useRef(null);
@@ -97,17 +99,44 @@ t2.from("#full .icon",{
 
 t2.pause();
 
- gsap.to("#page2", {
-  backgroundColor: "#E3E3C4",
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: "#page2 ",
-    scroller: "body",
-    start: "top 50%",
-    end: "top -10%",
-    scrub: 1,
+//  gsap.to("#page2", {
+//   backgroundColor: "#E3E3C4",
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: "#page2 ",
+//     scroller: "body",
+//     start: "top 50%",
+//     end: "top -10%",
+//     scrub: 1,
+//   }
+// });
+
+var allH1=document.querySelectorAll("#page2 h1");
+allH1.forEach(function(elem){
+  var h1Text=elem.textContent;
+  var splitedText=h1Text.split("");
+    var clutter="";
+  splitedText.map(function(e){
+  
+    console.log(e);
+    clutter+=`<span>${e === " " ? "&nbsp;" : e}</span>`;
+  })
+  //console.log(clutter);
+  elem.innerHTML=clutter;
+})
+gsap.to("#page2 h1 span",{
+  color:"#E3E3C4",
+  stagger:0.1,
+  scrollTrigger:{
+    trigger:"#page2 h1",
+    scroller:"body",
+    markers:true,
+    start:"top 50%",
+    end:"top -10%",
+    scrub:1,
+
   }
-});
+})
    
   })
   return (
@@ -131,7 +160,7 @@ t2.pause();
   </div>
     
     <div id="main" className="bg-gradient-to-br from-black via-purple-900 to-indigo-900 min-h-screen overflow-x-hidden text-white">
-      <div id="page1" className='md:pb-10'>
+      <div id="page1" className='pb-[100px] md:pb-10'>
         <div id="nav" className='flex items-center justify-between py-[2.3vw] px-[4.5vw]'>
           <div className="text-3xl logo text-cyan-300">Event Crew</div>
           <div id="nav" className='flex items-center text-white justify-between'>
@@ -157,12 +186,22 @@ t2.pause();
         <div className="hero">
           <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Experience</h1>
         </div>
-        
+        <Svg/>
       </div>
      
       <div id="page2" ref={page2Ref}>
-      <Svg/>
+      <h1 ref={first} id="first">Set within the </h1>
+      <h1>verdant pine and </h1>
+      <h1>oak tree forest of </h1>
+      <h1>miljeet national park</h1>
+      <h1>just two hours by </h1>
+      <h1>passenger or car</h1>
+      <h1>ferry from</h1>
+      <h1>Durbonvik </h1>
+      
+     
       </div>
+      
       <div id="page3"></div>
     </div>
     </>

@@ -99,19 +99,19 @@ t2.pause();
     <>
     <div ref={crsr} id="crsr" className="w-6 h-6 rounded-full bg-cyan-400 fixed pointer-events-none z-50 mix-blend-difference"></div>
     <div id="loader" className='loader py-[10vh] sm:py-[25vh] px-[5vw] sm:px-[10vw] h-[100%] w-[100%] fixed z-[999] bg-gradient-to-br from-black via-purple-900 to-indigo-900'>
-  <div className="line">
-    <div id="line1-part1" className="text-cyan-300 flex items-center justify-center text-2xl sm:text-4xl">
+  <div className="line mb-4">
+    <div id="line1-part1" className="text-cyan-300 flex items-center justify-center text-4xl sm:text-4xl mb-2">
       <h5 ref={href} className="mr-2">00</h5>
       <h6>- 100 </h6>
     </div>
-    <h1 className='text-[8vw] sm:text-[6.8vw] mx-[10px] sm:mx-[20px] font-semibold uppercase font text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'> Event</h1>
+    <h1 className='text-[12vw] sm:text-[6.8vw] mx-[10px] sm:mx-[20px] font-semibold uppercase font text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'> Event</h1>
+  </div>
+  <div className="line mb-4">
+    <h1 className='text-[12vw] sm:text-[6.8vw] font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500'>Crew Experience</h1>
   </div>
   <div className="line">
-    <h1 className='text-[8vw] sm:text-[6.8vw] font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500'>Crew Experience</h1>
-  </div>
-  <div className="line">
-    <h1 className='text-[8vw] sm:text-[6.8vw] font-semibold uppercase pr-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500'>is loading right</h1>
-    <h2 className="text-cyan-300 text-4xl sm:text-6xl">NOW</h2>
+    <h1 className='text-[12vw] sm:text-[6.8vw] font-semibold uppercase pr-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500'>is loading right</h1>
+    <h2 className="text-cyan-300 text-6xl sm:text-6xl mt-2">NOW</h2>
   </div>
 </div>
     

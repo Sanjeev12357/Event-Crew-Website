@@ -131,7 +131,7 @@ t2.pause();
   </div>
     
     <div id="main" className="bg-gradient-to-br from-black via-purple-900 to-indigo-900 min-h-screen overflow-x-hidden text-white">
-      <div id="page1">
+      <div id="page1" className='md:pb-10'>
         <div id="nav" className='flex items-center justify-between py-[2.3vw] px-[4.5vw]'>
           <div className="text-3xl logo text-cyan-300">Event Crew</div>
           <div id="nav" className='flex items-center text-white justify-between'>

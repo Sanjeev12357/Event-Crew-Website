@@ -45,7 +45,7 @@ const Svg = () => {
   return (
     <div className="string-container w-[100%] h-[200px]" ref={stringRef}>
       <svg width="800" height="200">
-        <path className="path" d="M 10 100 Q 400 100 790 100" stroke="white" fill="transparent" />
+        <path className="path" d="M 10 100 Q 400 100 790 100" stroke="black" fill="transparent" />
       </svg>
     </div>
   );

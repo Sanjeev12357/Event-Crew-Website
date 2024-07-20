@@ -26,6 +26,12 @@ body{
   width:100vw;
   background-color: #151515;
 }
+
+#page2{
+  height:100vh;
+  width:100vw;
+  background-color: #151515;
+}
 #main{
   position:absolute;
  

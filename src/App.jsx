@@ -5,12 +5,14 @@ import {useGSAP} from "@gsap/react"
 import { useRef } from 'react'
 import { BiMenu } from 'react-icons/bi';
 import { CgClose } from 'react-icons/cg';
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import Svg from './Svg'
-
+gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin();
 const App = () => {
   const href=useRef(null);
   const crsr=useRef(null);
+  const page2Ref = useRef(null);
   var t2=gsap.timeline();
   useGSAP(()=>{
    
@@ -94,6 +96,18 @@ t2.from("#full .icon",{
 })
 
 t2.pause();
+
+ gsap.to("#page2", {
+  backgroundColor: "#E3E3C4",
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: "#page2 ",
+    scroller: "body",
+    start: "top 50%",
+    end: "top -10%",
+    scrub: 1,
+  }
+});
    
   })
   return (
@@ -146,7 +160,7 @@ t2.pause();
         <Svg/>
       </div>
     
-      <div id="page2"></div>
+      <div id="page2" ref={page2Ref}></div>
       <div id="page3"></div>
     </div>
     </>

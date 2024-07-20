@@ -159,8 +159,10 @@ t2.pause();
         </div>
         
       </div>
+     
+      <div id="page2" ref={page2Ref}>
       <Svg/>
-      <div id="page2" ref={page2Ref}></div>
+      </div>
       <div id="page3"></div>
     </div>
     </>

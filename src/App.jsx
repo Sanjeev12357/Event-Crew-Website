@@ -5,6 +5,7 @@ import {useGSAP} from "@gsap/react"
 import { useRef } from 'react'
 import { BiMenu } from 'react-icons/bi';
 import { CgClose } from 'react-icons/cg';
+import Svg from './Svg'
 
 gsap.registerPlugin();
 const App = () => {
@@ -142,7 +143,9 @@ t2.pause();
         <div className="hero">
           <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Experience</h1>
         </div>
+        <Svg/>
       </div>
+    
       <div id="page2"></div>
       <div id="page3"></div>
     </div>

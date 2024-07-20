@@ -139,3 +139,38 @@ body{
 }
 
 
+/* Webkit browsers (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00ffff, #3366ff);
+  border-radius: 10px;
+  border: 2px solid #0f0f1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #3366ff, #00ffff);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3366ff #0f0f1a;
+}
+
+/* For Internet Explorer and Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+/* Optional: Add a glow effect */
+::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 15px rgba(51, 102, 255, 0.5);
+}

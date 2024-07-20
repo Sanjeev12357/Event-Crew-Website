@@ -97,59 +97,51 @@ t2.pause();
   })
   return (
     <>
-    <div ref={crsr} id="crsr"></div>
-   <div id="loader" className='loader py-[25vh] px-[10vw] h-[100%] w-[100%] fixed z-999 bg-[#0B0B0B]'>
-      <div className="line ">
-        <div id="line1-part1">
+    <div ref={crsr} id="crsr" className="w-6 h-6 rounded-full bg-cyan-400 fixed pointer-events-none z-50 mix-blend-difference"></div>
+    <div id="loader" className='loader py-[25vh] px-[10vw] h-[100%] w-[100%] fixed z-999 bg-gradient-to-br from-black via-purple-900 to-indigo-900'>
+      <div className="line">
+        <div id="line1-part1" className="text-cyan-300">
           <h5 ref={href}>00</h5>
           <h6>- 100 {" "} </h6>
         </div>
-        <h1 className='text-[6.8vw] mx-[20px] font-semibold uppercase font'> Event</h1>
+        <h1 className='text-[6.8vw] mx-[20px] font-semibold uppercase font text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'> Event</h1>
       </div>
-      <div className="line ">
-      <h1 className='text-[6.8vw] font-semibold uppercase'>Crew Experience</h1>
+      <div className="line">
+      <h1 className='text-[6.8vw] font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500'>Crew Experience</h1>
     </div>
-    <div className="line ">
-    <h1 className='text-[6.8vw] font-semibold uppercase pr-2'>is loading right</h1>
-    <h2>NOW</h2>
-
-  </div>
+    <div className="line">
+    <h1 className='text-[6.8vw] font-semibold uppercase pr-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500'>is loading right</h1>
+    <h2 className="text-cyan-300">NOW</h2>
     </div>
-  
-    <div id="main">
-      <div id="page1" >
-        <div id="nav" className='flex items-center justify-between py-[2.3vw] px-[4.5vw]'>
-          <div className="text-3xl logo ">Event Crew</div>
-          <div id="nav" className='flex items-center text-white justify-between '>
-
-              
-            <BiMenu  onClick={()=>{
-                t2.play();
-            }} className='text-4xl cursor-pointer font-bold'/>
-          </div>
-          <div id="full" className=' h-[100%]  text-[#ffffffac] px-[30px] py-[100px] w-[40%] absolute bg-[#151515] top-0 right-[-40%] backdrop-blur-xl'>
-          <h4 className='text-6xl font-bold mt-[50px] mb-[40px]'>Work</h4>
-          <h4 className='text-6xl font-bold mb-[40px]'>About</h4>
-          <h4 className='text-6xl font-bold mb-[40px]'>Services</h4>
-          <h4 className='text-6xl font-bold mb-[40px]'>Contact</h4>
-          <h4 className='text-6xl font-bold mb-[40px]'>About</h4>
+    </div>
     
-          <CgClose onClick={()=>{t2.reverse()}} className='icon cursor-pointer absolute top-[5%] text-3xl font-bold text-black  rounded-full right-[10%] bg-white'/>
+    <div id="main" className="bg-gradient-to-br from-black via-purple-900 to-indigo-900 min-h-screen text-white">
+      <div id="page1">
+        <div id="nav" className='flex items-center justify-between py-[2.3vw] px-[4.5vw]'>
+          <div className="text-3xl logo text-cyan-300">Event Crew</div>
+          <div id="nav" className='flex items-center text-white justify-between'>
+            <BiMenu onClick={()=>{t2.play();}} className='text-4xl cursor-pointer font-bold text-cyan-300'/>
+          </div>
+          <div id="full" className='h-[100%] text-[#ffffffac] px-[30px] py-[100px] w-[60%] md:w-[40%] absolute bg-gradient-to-br from-purple-900 to-indigo-900 top-0 right-[-60%] md:right-[-40%] backdrop-blur-xl'>
+          <h4 className='md:text-5xl text-2xl font-bold mt-[50px] mb-[40px] text-cyan-300'>Work</h4>
+          <h4 className='md:text-5xl text-2xl font-bold mt-[50px] mb-[40px] text-cyan-300'>About</h4>
+          <h4 className='md:text-5xl text-2xl font-bold mt-[50px] mb-[40px] text-cyan-300'>Contact</h4>
+          <h4 className='md:text-5xl text-2xl font-bold mt-[50px] mb-[40px] text-cyan-300'>Services</h4>
+          <CgClose onClick={()=>{t2.reverse()}} className='icon cursor-pointer absolute top-[5%] text-3xl font-bold text-black rounded-full right-[10%] bg-cyan-300'/>
         </div>
         </div>
         <div className="hero">
-          <h1>We Design</h1>
+          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">We Design</h1>
         </div>
         <div className="hero">
-          <h1>Unique</h1>
+          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Unique</h1>
         </div>
         <div className="hero">
-          <h1>Web/Graphic</h1>
+          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Web/Graphic</h1>
         </div>
         <div className="hero">
-          <h1>Experience</h1>
+          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Experience</h1>
         </div>
-
       </div>
       <div id="page2"></div>
       <div id="page3"></div>

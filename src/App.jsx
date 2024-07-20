@@ -157,9 +157,9 @@ t2.pause();
         <div className="hero">
           <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Experience</h1>
         </div>
-        <Svg/>
+        
       </div>
-    
+      <Svg/>
       <div id="page2" ref={page2Ref}></div>
       <div id="page3"></div>
     </div>

@@ -76,13 +76,18 @@ body {
 
 #page2{
   width:100%;
-  min-height:100vh;
+  max-height:100vh;
+  padding:20px 10px;
   background-color: #151515;
   padding:5vw;
+  display: flex ;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
 }
 
 #page2 h1{
-  color:#434B34;
+  color:#E3E3C4;
   font-family: PP Woodland , sans-serif;
   font-size:5vw;
   text-align:center;
@@ -100,7 +105,7 @@ body {
 }
 
 #page2 h1 span{
-  font-family: PP Woodland , sans-serif;
+  font-family: "silk serif";
 }
 
 #main{
@@ -200,7 +205,15 @@ body {
 .hero{
   
   width:72%;
-  margin-left:27%;
+  margin-left:37%;
+
+}
+
+.hero2{
+  
+  width:72%;
+  margin-right:37%;
+  overflow: hidden;
 
 }
 .hero:nth-child(2){
@@ -208,10 +221,77 @@ body {
 }
 .hero h1{
   font-size:7.2vw;
-  font-family: url("../public/plain-light-webfont.ttf");
+  font-family: "silk serif";
+  font-weight: 600;
+  text-transform: uppercase;  
+  line-height:7.2vw;
+
+}
+.hero2 h1{
+  font-size:7.2vw;
+  font-family: "silk serif";
   font-weight: 600;
   text-transform: uppercase;  
   line-height:7.2vw;
 
 }
 
+
+
+
+/* Footer.css */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+.footer-content {
+  text-align: left;
+  max-width: 400px;
+}
+
+.footer-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.handles {
+  text-align: left;
+}
+
+.handles h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.icons a:hover {
+  color: #00aced;
+}
+
+.footer-creator {
+  text-align: left;
+}
+
+.footer-creator h3, .footer-creator h4 {
+  margin: 0;
+}

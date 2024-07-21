@@ -4,8 +4,46 @@ body{
   height:100%;
   color:white;
   overflow-x: hidden;
+  cursor: none;
   
   background-color: black;
+}
+
+
+/* Webkit browsers (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00ffff, #3366ff);
+  border-radius: 10px;
+  border: 2px solid #0f0f1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #3366ff, #00ffff);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3366ff #0f0f1a;
+}
+
+/* For Internet Explorer and Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+/* Optional: Add a glow effect */
+::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 15px rgba(51, 102, 255, 0.5);
 }
 
 #crsr{
@@ -21,12 +59,12 @@ body{
 }
 
 
-#page1{
+/* #page1{
   height:100vh;
   width:100vw;
   background-color: #151515;
   
-}
+} */
 
 #page3{
   height:100vh;
@@ -53,7 +91,13 @@ body{
   
 
 }
+.hero{
+  overflow-y:hidden;
+}
 
+.navbar h2{
+  font-family: "silk serif";
+}
 
 #page2 h1 span{
   font-family: PP Woodland , sans-serif;
@@ -171,39 +215,3 @@ body{
 
 }
 
-
-/* Webkit browsers (Chrome, Safari, newer versions of Opera) */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0f0f1a;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #00ffff, #3366ff);
-  border-radius: 10px;
-  border: 2px solid #0f0f1a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #3366ff, #00ffff);
-}
-
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #3366ff #0f0f1a;
-}
-
-/* For Internet Explorer and Edge */
-body {
-  -ms-overflow-style: none;
-}
-
-/* Optional: Add a glow effect */
-::-webkit-scrollbar-thumb {
-  box-shadow: 0 0 15px rgba(51, 102, 255, 0.5);
-}

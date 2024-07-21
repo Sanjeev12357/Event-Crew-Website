@@ -20,7 +20,8 @@
     "remixicon": "^4.3.0",
     "remixicon-react": "^1.0.0",
     "shery": "^1.0.8",
-    "sheryjs": "^1.0.0-beta.0.1.7"
+    "sheryjs": "^1.0.0-beta.0.1.7",
+    "three": "^0.166.1"
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",

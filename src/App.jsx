@@ -304,7 +304,7 @@ function footertrigger(){
               <CgClose onClick={()=>{t2.reverse()}} className='icon cursor-pointer absolute top-[5%] text-2xl md:text-3xl font-bold text-black rounded-full right-[10%] bg-cyan-300'/>
             </div>
           </div>
-          <div className='svg absolute top-[-20px] mb-10 left-4 md:top-10 md:left-10'>
+          <div className='svg absolute top-[50px] mb-10 left-4 md:top-10 md:left-10'>
             <Svg/>
           </div>
        
